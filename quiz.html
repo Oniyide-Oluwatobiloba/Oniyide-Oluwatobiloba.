@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="quizquestions.css">
+        <script src="script.js" defer></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <img src="./IMAGES/LOGO.png" class="logo">
+
+
+        <div class="btn-group">
+            <button><a href="./index.html" target="_blank">Home</a></button>
+        </div>
+
+    </nav>
+
+    <div class="quiz-container">
+        <div id="quiz">
+            <div class="question-container">
+                <span id="question">Question will appear here</span>
+            </div>
+            <div class="answers-container">
+                <button class="answer-btn" onclick="checkAnswer(0)">Answer 1</button>
+                <button class="answer-btn" onclick="checkAnswer(1)">Answer 2</button>
+                <button class="answer-btn" onclick="checkAnswer(2)">Answer 3</button>
+                <button class="answer-btn" onclick="checkAnswer(3)">Answer 4</button>
+            </div>
+            
+            <div id="result"></div>
+            <button id="next-btn" onclick="nextQuestion()">Next question</button>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>
